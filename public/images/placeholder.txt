@@ -1,0 +1,13 @@
+Images à ajouter dans ce dossier :
+
+1. hero-bg.jpg - Image de fond pour la bannière principale (parfum, ambiance luxueuse)
+2. mystere-nocturne.jpg - Image du parfum Mystère Nocturne
+3. elegance-doree.jpg - Image du parfum Élégance Dorée
+4. harmonie-mixte.jpg - Image du parfum Harmonie Mixte
+5. seduction-secrete.jpg - Image du parfum Séduction Secrète
+6. force-masculine.jpg - Image du parfum Force Masculine
+7. luxe-absolu.jpg - Image du parfum Luxe Absolu
+8. about-lifestyle.jpg - Image lifestyle pour la page À propos
+
+Format recommandé : JPG ou PNG, résolution minimale 800x600px
+Style : Élégant, mystérieux, en accord avec l'identité AURYA

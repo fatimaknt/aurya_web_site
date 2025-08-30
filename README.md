@@ -1,46 +1,126 @@
-# Getting Started with Create React App
+# AURYA ✨ - Site Web de Parfums
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Un site web élégant et mystérieux pour la marque de parfums AURYA au Sénégal, construit avec React et Material UI.
 
-## Available Scripts
+## 🎯 Concept
 
-In the project directory, you can run:
+**"L'élégance du mystère en chaque goutte"**
 
-### `npm start`
+AURYA incarne la sophistication et le mystère à travers une collection exclusive de fragrances qui transcendent le simple plaisir olfactif, en s'inspirant de la richesse culturelle sénégalaise.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## ✨ Fonctionnalités
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🏠 Page d'Accueil
+- Bannière principale (Hero section) avec logo AURYA
+- Slogan accrocheur
+- Bouton "Voir nos parfums"
+- Aperçu des parfums vedettes
 
-### `npm test`
+### 🛍️ Catalogue des Parfums
+- Grille responsive (4 colonnes PC, 2 tablette, 1 mobile)
+- Filtres par catégorie (Homme, Femme, Mixte, Nouveautés, Luxe)
+- Barre de recherche par nom ou senteur
+- Cartes Material UI avec animations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔍 Détails des Parfums
+- Grande photo du parfum
+- Description détaillée
+- Notes olfactives (Tête, Cœur, Fond)
+- Prix en FCFA (préparation e-commerce)
 
-### `npm run build`
+### 📖 À Propos
+- Histoire et vision d'AURYA
+- Photo lifestyle
+- Valeurs : Mystère, Élégance, Unicité
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📞 Contact & Réseaux
+- Formulaire de contact
+- Bouton WhatsApp direct
+- Liens vers Instagram, Facebook
+- Livraison dans tout le Sénégal
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 18** avec TypeScript
+- **Material UI (MUI)** pour l'interface
+- **React Router** pour la navigation
+- **Emotion** pour les styles
+- **Responsive Design** mobile-first
 
-### `npm run eject`
+## 🎨 Design
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Thème
+- **Couleurs principales** : Noir (#000000) et Doré (#D4AF37)
+- **Typographie** : Playfair Display (serif) pour les titres
+- **Style** : Élégant, mystérieux, sophistiqué
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Animations
+- Fade-in des parfums au scroll
+- Transitions douces sur les cartes
+- Effets hover élégants
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📱 Responsive
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Desktop** : 4 colonnes
+- **Tablette** : 2 colonnes  
+- **Mobile** : 1 colonne
+- Navigation adaptative avec Drawer mobile
 
-## Learn More
+## 🏃‍♂️ Installation et Lancement
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Installer les dépendances
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Lancer en mode développement
+npm start
+
+# Construire pour la production
+npm run build
+```
+
+## 📁 Structure du Projet
+
+```
+src/
+├── components/          # Composants réutilisables
+│   ├── Navigation.tsx  # Barre de navigation
+│   ├── HeroSection.tsx # Section héro
+│   └── ParfumCard.tsx  # Carte de parfum
+├── pages/              # Pages de l'application
+│   ├── HomePage.tsx    # Page d'accueil
+│   ├── ParfumsPage.tsx # Catalogue des parfums
+│   ├── ParfumDetailPage.tsx # Détails d'un parfum
+│   ├── AboutPage.tsx   # Page à propos
+│   └── ContactPage.tsx # Page contact
+├── data/               # Données des parfums
+│   └── parfums.ts      # Collection de parfums
+├── types/              # Types TypeScript
+│   └── parfum.ts       # Interface Parfum
+└── theme.ts            # Thème Material UI personnalisé
+```
+
+## 🎭 Parfums Disponibles
+
+- **Mystère Nocturne** (Femme, Nouveau, Luxe) - 58 000 FCFA
+- **Élégance Dorée** (Homme, Luxe) - 62 000 FCFA
+- **Harmonie Mixte** (Mixte, Nouveau) - Prix sur demande
+- **Séduction Secrète** (Femme) - Prix sur demande
+- **Force Masculine** (Homme) - Prix sur demande
+- **Luxe Absolu** (Mixte, Luxe) - 78 000 FCFA
+
+## 🔮 Évolutions Futures
+
+- Mode sombre/clair
+- Carrousel d'images
+- Section témoignages clients
+- Intégration e-commerce
+- Blog et actualités
+
+## 📄 Licence
+
+Projet créé pour AURYA - Tous droits réservés
+
+---
+
+**AURYA ✨** - L'élégance du mystère en chaque goutte
