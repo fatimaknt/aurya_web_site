@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
                             color="text.secondary"
                             sx={{ maxWidth: 700, mx: 'auto', fontStyle: 'italic' }}
                         >
-                            "L'élégance du mystère en chaque goutte"
+                            "Des parfums d'exception pour votre quotidien"
                         </Typography>
                     </Box>
 
@@ -41,15 +41,18 @@ const AboutPage: React.FC = () => {
                             <Fade in timeout={700}>
                                 <Box>
                                     <img
-                                        src="/images/about-lifestyle.jpg"
-                                        alt="AURYA - Lifestyle et parfums"
-                                        style={{
-                                            width: '100%',
-                                            height: 'auto',
-                                            borderRadius: 12,
-                                            boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
-                                        }}
-                                    />
+                                         src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                         alt="AURYA - Collection de parfums de luxe"
+                                         style={{
+                                             width: '100%',
+                                             height: 'auto',
+                                             borderRadius: 12,
+                                             boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+                                         }}
+                                     />Weight: 600
+                            
+                         
+                                
                                 </Box>
                             </Fade>
                         </Box>
@@ -72,18 +75,18 @@ const AboutPage: React.FC = () => {
                                         variant="body1"
                                         sx={{ mb: 3, lineHeight: 1.7 }}
                                     >
-                                        AURYA est née d'une passion pour l'art du parfum et d'une vision unique :
-                                        créer des fragrances qui transcendent le simple plaisir olfactif pour devenir
-                                        de véritables expériences sensorielles.
+                                        AURYA est votre destination privilégiée pour découvrir les plus belles
+                                        fragrances du marché. Nous sélectionnons avec soin des parfums d'exception
+                                        qui s'adaptent à tous les goûts et toutes les occasions.
                                     </Typography>
 
                                     <Typography
                                         variant="body1"
                                         sx={{ mb: 3, lineHeight: 1.7 }}
                                     >
-                                        Chaque parfum AURYA est conçu comme une œuvre d'art, une invitation à
-                                        découvrir des mondes mystérieux et élégants. Nous croyons que la beauté
-                                        réside dans l'équilibre parfait entre la sophistication et l'accessibilité.
+                                        Notre mission est de vous offrir un accès facile aux parfums de qualité,
+                                        avec des prix compétitifs et un service client exceptionnel. Chaque parfum
+                                        de notre collection est choisi pour sa qualité et son rapport qualité-prix.
                                     </Typography>
                                 </Box>
                             </Fade>
@@ -118,11 +121,11 @@ const AboutPage: React.FC = () => {
                                                 fontWeight: 600
                                             }}
                                         >
-                                            Mystère ✨
+                                            Qualité ✨
                                         </Typography>
                                         <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
-                                            Chaque parfum raconte une histoire unique, révélant ses secrets
-                                            progressivement au fil du temps.
+                                            Nous sélectionnons uniquement des parfums de marques reconnues
+                                            pour leur excellence et leur durabilité.
                                         </Typography>
                                     </Box>
                                 </Fade>
@@ -139,11 +142,11 @@ const AboutPage: React.FC = () => {
                                                 fontWeight: 600
                                             }}
                                         >
-                                            Élégance ✨
+                                            Accessibilité ✨
                                         </Typography>
                                         <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
-                                            Une sophistication intemporelle qui s'exprime à travers des
-                                            compositions raffinées et des matières premières d'exception.
+                                            Des prix compétitifs et une livraison rapide pour rendre
+                                            les parfums de qualité accessibles à tous.
                                         </Typography>
                                     </Box>
                                 </Fade>
@@ -160,11 +163,11 @@ const AboutPage: React.FC = () => {
                                                 fontWeight: 600
                                             }}
                                         >
-                                            Unicité ✨
+                                            Service ✨
                                         </Typography>
                                         <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
-                                            Des créations qui se distinguent par leur caractère distinctif
-                                            et leur capacité à s'adapter à chaque personnalité.
+                                            Un service client personnalisé et des conseils experts
+                                            pour vous aider à trouver le parfum parfait.
                                         </Typography>
                                     </Box>
                                 </Fade>
@@ -190,8 +193,8 @@ const AboutPage: React.FC = () => {
                                     color="text.secondary"
                                     sx={{ maxWidth: 600, mx: 'auto', lineHeight: 1.6 }}
                                 >
-                                    Découvrez notre collection exclusive et laissez-vous porter par
-                                    l'élégance mystérieuse qui caractérise chaque création AURYA.
+                                    Découvrez notre collection de parfums et trouvez celui qui vous correspond.
+                                    AURYA vous accompagne dans votre recherche du parfum parfait.
                                 </Typography>
                             </Box>
                         </Fade>

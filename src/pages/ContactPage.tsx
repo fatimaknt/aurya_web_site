@@ -14,7 +14,8 @@ import {
     WhatsApp as WhatsAppIcon,
     Instagram as InstagramIcon,
     Facebook as FacebookIcon,
-    Send as SendIcon
+    Send as SendIcon,
+    MusicNote as TikTokIcon
 } from '@mui/icons-material';
 
 const ContactPage: React.FC = () => {
@@ -27,6 +28,9 @@ const ContactPage: React.FC = () => {
         message: ''
     });
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -35,9 +39,30 @@ const ContactPage: React.FC = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Formulaire soumis:', formData);
+        setIsSubmitting(true);
+
+        try {
+            // Créer le message WhatsApp avec les données du formulaire
+            const whatsappMessage = `Nouveau message de contact AURYA:
+            
+Nom: ${formData.name}
+Email: ${formData.email}
+Message: ${formData.message}
+
+Répondre rapidement pour ne pas perdre le client.`;
+
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.open(`https://wa.me/770874619?text=${encodedMessage}`, '_blank');
+
+            setSubmitStatus('success');
+            setFormData({ name: '', email: '', message: '' });
+        } catch (error) {
+            setSubmitStatus('error');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleWhatsApp = () => {
@@ -132,6 +157,7 @@ const ContactPage: React.FC = () => {
                                             variant="contained"
                                             fullWidth
                                             size="large"
+                                            disabled={isSubmitting}
                                             endIcon={<SendIcon />}
                                             sx={{
                                                 backgroundColor: theme.palette.secondary.main,
@@ -139,11 +165,34 @@ const ContactPage: React.FC = () => {
                                                 py: 1.5,
                                                 '&:hover': {
                                                     backgroundColor: theme.palette.secondary.dark,
+                                                },
+                                                '&:disabled': {
+                                                    backgroundColor: theme.palette.grey[400],
                                                 }
                                             }}
                                         >
-                                            Envoyer le message
+                                            {isSubmitting ? 'Envoi en cours...' : 'Envoyer via WhatsApp'}
                                         </Button>
+
+                                        {submitStatus === 'success' && (
+                                            <Typography
+                                                variant="body2"
+                                                color="success.main"
+                                                sx={{ mt: 2, textAlign: 'center' }}
+                                            >
+                                                ✅ Message envoyé ! Vous allez être redirigé vers WhatsApp.
+                                            </Typography>
+                                        )}
+
+                                        {submitStatus === 'error' && (
+                                            <Typography
+                                                variant="body2"
+                                                color="error.main"
+                                                sx={{ mt: 2, textAlign: 'center' }}
+                                            >
+                                                ❌ Erreur lors de l'envoi. Veuillez réessayer.
+                                            </Typography>
+                                        )}
                                     </Box>
                                 </Paper>
                             </Fade>
@@ -152,53 +201,6 @@ const ContactPage: React.FC = () => {
                         <Box sx={{ flex: 1 }}>
                             <Fade in timeout={900}>
                                 <Box>
-                                    <Paper
-                                        elevation={3}
-                                        sx={{
-                                            p: 4,
-                                            mb: 4,
-                                            borderRadius: 2,
-                                            backgroundColor: 'rgba(255,255,255,0.9)',
-                                            backdropFilter: 'blur(10px)'
-                                        }}
-                                    >
-                                        <Typography
-                                            variant="h5"
-                                            sx={{
-                                                mb: 3,
-                                                color: theme.palette.text.primary,
-                                                fontWeight: 600
-                                            }}
-                                        >
-                                            Commander sur WhatsApp
-                                        </Typography>
-
-                                        <Typography
-                                            variant="body1"
-                                            sx={{ mb: 3, lineHeight: 1.6 }}
-                                        >
-                                            Pour passer une commande ou obtenir des conseils personnalisés,
-                                            contactez-nous directement sur WhatsApp.
-                                        </Typography>
-
-                                        <Button
-                                            variant="contained"
-                                            fullWidth
-                                            size="large"
-                                            startIcon={<WhatsAppIcon />}
-                                            onClick={handleWhatsApp}
-                                            sx={{
-                                                backgroundColor: '#25D366',
-                                                color: 'white',
-                                                py: 1.5,
-                                                '&:hover': {
-                                                    backgroundColor: '#128C7E',
-                                                }
-                                            }}
-                                        >
-                                            Commander sur WhatsApp 📱
-                                        </Button>
-                                    </Paper>
 
                                     <Paper
                                         elevation={3}
@@ -231,32 +233,18 @@ const ContactPage: React.FC = () => {
                                         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
                                             <Button
                                                 variant="outlined"
-                                                startIcon={<InstagramIcon />}
+                                                startIcon={<TikTokIcon />}
+                                                onClick={() => window.open('https://www.tiktok.com/@fatim.parfumluxe', '_blank')}
                                                 sx={{
-                                                    borderColor: '#E4405F',
-                                                    color: '#E4405F',
+                                                    borderColor: '#000000',
+                                                    color: '#000000',
                                                     '&:hover': {
-                                                        borderColor: '#C13584',
-                                                        backgroundColor: 'rgba(196, 53, 132, 0.1)',
+                                                        borderColor: '#333333',
+                                                        backgroundColor: 'rgba(0, 0, 0, 0.1)',
                                                     }
                                                 }}
                                             >
-                                                Instagram
-                                            </Button>
-
-                                            <Button
-                                                variant="outlined"
-                                                startIcon={<FacebookIcon />}
-                                                sx={{
-                                                    borderColor: '#1877F2',
-                                                    color: '#1877F2',
-                                                    '&:hover': {
-                                                        borderColor: '#166FE5',
-                                                        backgroundColor: 'rgba(22, 111, 229, 0.1)',
-                                                    }
-                                                }}
-                                            >
-                                                Facebook
+                                                TikTok
                                             </Button>
                                         </Box>
                                     </Paper>

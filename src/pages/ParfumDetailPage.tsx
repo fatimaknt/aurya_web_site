@@ -4,13 +4,14 @@ import {
     Typography,
     Box,
     Chip,
+    Button,
     useTheme,
     useMediaQuery,
     Fade,
     Divider
 } from '@mui/material';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowBack as ArrowBackIcon } from '@mui/icons-material';
+import { ArrowBack as ArrowBackIcon, WhatsApp as WhatsAppIcon } from '@mui/icons-material';
 import { parfums } from '../data/parfums';
 
 const ParfumDetailPage: React.FC = () => {
@@ -19,6 +20,12 @@ const ParfumDetailPage: React.FC = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     const parfum = parfums.find(p => p.id === id);
+
+    const handleBuyClick = () => {
+        const message = `Bonjour ! Je souhaite acheter le parfum "${parfum?.name}"${parfum?.price ? ` au prix de ${parfum.price.toLocaleString('fr-FR')} FCFA` : ''}. Pouvez-vous me donner plus d'informations sur la disponibilité et la livraison ?`;
+        const encodedMessage = encodeURIComponent(message);
+        window.open(`https://wa.me/770874619?text=${encodedMessage}`, '_blank');
+    };
 
     if (!parfum) {
         return (
@@ -150,6 +157,32 @@ const ParfumDetailPage: React.FC = () => {
                                             </Typography>
                                         </Box>
                                     )}
+
+                                    <Button
+                                        variant="contained"
+                                        size="large"
+                                        startIcon={<WhatsAppIcon />}
+                                        onClick={handleBuyClick}
+                                        sx={{
+                                            backgroundColor: '#25D366',
+                                            color: 'white',
+                                            px: 4,
+                                            py: 2,
+                                            fontSize: '1.1rem',
+                                            fontWeight: 600,
+                                            borderRadius: '50px',
+                                            textTransform: 'none',
+                                            mb: 4,
+                                            '&:hover': {
+                                                backgroundColor: '#128C7E',
+                                                transform: 'translateY(-2px)',
+                                                boxShadow: '0 8px 25px rgba(37, 211, 102, 0.4)',
+                                            },
+                                            transition: 'all 0.3s ease'
+                                        }}
+                                    >
+                                        🛒 Acheter maintenant
+                                    </Button>
 
                                     <Divider sx={{ my: 4 }} />
 

@@ -1,0 +1,27 @@
+Images de fond recommandées pour la page d'accueil AURYA :
+
+1. Image principale (hero-bg.jpg) :
+   - Plage tropicale avec eau cristalline
+   - Coucher de soleil sur l'océan
+   - Vagues douces et sable doré
+   - Ambiance mystérieuse et élégante
+
+2. Alternatives possibles :
+   - Parfums de luxe sur fond de plage
+   - Flacons de parfum avec reflets dorés
+   - Ambiance spa/luxe avec éléments naturels
+   - Plage de sable blanc avec palmiers
+
+3. Dimensions recommandées :
+   - 1920x1080px minimum
+   - Format JPG ou WebP
+   - Optimisé pour le web (< 500KB)
+
+4. Style visuel :
+   - Tons chauds (or, beige, bleu océan)
+   - Contraste élevé pour la lisibilité du texte
+   - Ambiance premium et mystérieuse
+   - Évoque le luxe et l'exotisme
+
+Note: L'image actuelle utilise une URL Unsplash temporaire.
+Pour la production, remplacer par une image locale optimisée.
