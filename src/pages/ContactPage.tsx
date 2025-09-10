@@ -81,11 +81,33 @@ Répondre rapidement pour ne pas perdre le client.`;
                         <Typography
                             variant="h6"
                             color="text.secondary"
-                            sx={{ maxWidth: 600, mx: 'auto' }}
+                            sx={{ maxWidth: 600, mx: 'auto', mb: 4 }}
                         >
                             Nous sommes là pour répondre à toutes vos questions et vous accompagner
                             dans votre découverte des parfums AURYA
                         </Typography>
+                        
+                        <Box sx={{ 
+                            backgroundColor: 'rgba(212, 175, 55, 0.1)', 
+                            p: 3, 
+                            borderRadius: 2, 
+                            maxWidth: 600, 
+                            mx: 'auto',
+                            border: `1px solid ${theme.palette.secondary.main}20`
+                        }}>
+                            <Typography variant="h6" sx={{ mb: 2, color: theme.palette.secondary.main, fontWeight: 600 }}>
+                                📱 Contact WhatsApp
+                            </Typography>
+                            <Typography variant="body1" sx={{ mb: 1, fontWeight: 500 }}>
+                                <strong>Numéro local :</strong> 77 087 46 19
+                            </Typography>
+                            <Typography variant="body1" sx={{ mb: 2, fontWeight: 500 }}>
+                                <strong>Format international :</strong> +221 77 087 46 19
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary" sx={{ fontStyle: 'italic' }}>
+                                💡 Pour les clients à l'étranger : utilisez le format international (+221) pour nous contacter
+                            </Typography>
+                        </Box>
                     </Box>
 
                     <Box sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, gap: 6 }}>
