@@ -15,8 +15,6 @@ import ParfumCard from '../components/ParfumCard';
 
 const ParfumsPage: React.FC = () => {
     const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-    const isTablet = useMediaQuery(theme.breakpoints.down('md'));
 
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -149,5 +147,7 @@ const ParfumsPage: React.FC = () => {
         </Container>
     );
 };
+
+
 
 export default ParfumsPage;

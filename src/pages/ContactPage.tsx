@@ -11,9 +11,6 @@ import {
     Paper
 } from '@mui/material';
 import {
-    WhatsApp as WhatsAppIcon,
-    Instagram as InstagramIcon,
-    Facebook as FacebookIcon,
     Send as SendIcon,
     MusicNote as TikTokIcon
 } from '@mui/icons-material';
@@ -65,10 +62,6 @@ Répondre rapidement pour ne pas perdre le client.`;
         }
     };
 
-    const handleWhatsApp = () => {
-        const message = encodeURIComponent("Bonjour ! Je souhaite en savoir plus sur vos parfums AURYA.");
-        window.open(`https://wa.me/770874619?text=${message}`, '_blank');
-    };
 
     return (
         <Container maxWidth="lg" sx={{ py: 8 }}>
