@@ -167,7 +167,7 @@ export const parfums: Parfum[] = [
     }
   },
   {
-    id: '11',
+    id: '12',
     name: 'Moussouf',
     description: 'Parfum feminin traditionnel. Eau de parfum . Fragrance authentique et envoûtante.',
     shortDescription: 'Parfum feminin traditionnel',
