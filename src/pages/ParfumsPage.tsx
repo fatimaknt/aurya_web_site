@@ -6,7 +6,6 @@ import {
     Box,
     Chip,
     useTheme,
-    useMediaQuery,
     Fade
 } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
