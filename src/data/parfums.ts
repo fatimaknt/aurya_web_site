@@ -180,6 +180,51 @@ export const parfums: Parfum[] = [
       coeur: ['Musc', 'Ambre'],
       fond: ['Bois de santal', 'Vanille']
     }
+  },
+  {
+    id: '13',
+    name: 'Black Sense Femme',
+    description: 'Parfum féminin élégant et sophistiqué. Eau de parfum. Fragrance moderne et sensuelle.',
+    shortDescription: 'Parfum féminin élégant et sophistiqué',
+    image: '/images/blacksensef.jpg',
+    category: 'femme',
+    isLuxury: false,
+    price: 5000,
+    notes: {
+      tete: ['Bergamote', 'Pamplemousse'],
+      coeur: ['Rose', 'Jasmin'],
+      fond: ['Musc', 'Bois de santal']
+    }
+  },
+  {
+    id: '14',
+    name: 'Black Sense Homme',
+    description: 'Parfum masculin moderne et viril. Eau de parfum. Fragrance puissante et charismatique.',
+    shortDescription: 'Parfum masculin moderne et viril',
+    image: '/images/blacksensehomme.jpg',
+    category: 'homme',
+    isLuxury: false,
+    price: 5000,
+    notes: {
+      tete: ['Citron', 'Lavande'],
+      coeur: ['Géranium', 'Poivre'],
+      fond: ['Bois de cèdre', 'Ambre']
+    }
+  },
+  {
+    id: '15',
+    name: 'Private',
+    description: 'Parfum exclusif et mystérieux. Eau de parfum. Fragrance unique et envoûtante.',
+    shortDescription: 'Parfum exclusif et mystérieux',
+    image: '/images/private.jpg',
+    category: 'mixte',
+    isLuxury: true,
+    price: 6000,
+    notes: {
+      tete: ['Néroli', 'Cardamome'],
+      coeur: ['Rose noire', 'Patchouli'],
+      fond: ['Oud', 'Vanille']
+    }
   }
 
 ];
