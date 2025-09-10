@@ -60,7 +60,7 @@ const ParfumsPage: React.FC = () => {
                     color="text.secondary"
                     sx={{ maxWidth: 600, mx: 'auto' }}
                 >
-                    Découvrez notre collection exclusive de parfums d'exception au Sénégal
+                    Découvrez notre collection exclusive de fragrances mystérieuses et élégantes
                 </Typography>
             </Box>
 

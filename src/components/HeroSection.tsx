@@ -135,7 +135,7 @@ const HeroSection: React.FC = () => {
               animation: 'fadeInUp 1.2s ease-out 0.8s both'
             }}
           >
-            Découvrir nos parfums
+            Nos parfums
           </Button>
         </Box>
       </Container>
